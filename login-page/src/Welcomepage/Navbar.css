@@ -1,0 +1,17 @@
+.navbar-light {
+  display: flex;
+  gap: 20px;
+  padding: 15px;
+  background: #eee;
+}
+
+
+
+.navbar-dark {
+  background: #222;
+  color: white;
+}
+
+button {
+  margin-left: auto;
+}

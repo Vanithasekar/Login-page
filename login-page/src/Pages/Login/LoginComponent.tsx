@@ -42,7 +42,7 @@ const LoginComponent = () => {
                     <input onChange ={(e)=>setUsername(e.target.value)} type="text" placeholder="Enter the username" value={username}></input>
                     <h3>password</h3>
                     <input onChange={(e)=>setPassword(e.target.value)} type="password" placeholder="Enter the password" value={password}></input>
-                    <br/>
+                    <br/>          
                     <button onClick={Loginlogic}>Login</button>
                     {loginDialog && 
                     ( <LoginDialog
