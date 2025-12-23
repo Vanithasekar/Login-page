@@ -1,9 +1,16 @@
+import { useEffect } from "react";
 import "./LoginDialog.css"
 type LogindialogProps = {
     onOK:()=>void;
     onCancel:()=>void;
 };
 const LoginDialog = ({onOK,onCancel}:LogindialogProps) => {
+    useEffect(() => {
+        setTimeout(() => {
+            onOK();
+        }, 3000);
+    }, [onOK]);
+    
     return (
         <div className="dialog-overlay">
             <div className="dialog-box">

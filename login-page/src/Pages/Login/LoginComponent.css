@@ -1,7 +1,11 @@
 .login-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    /* display: inline-block;
+    flex-direction: column; */
+    /* align-items: center;
     justify-content: center;
     height: 100vh;
+    margin-right: 40px; */
+    width: 400px;
+    margin: auto; 
+    
 }

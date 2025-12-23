@@ -18,12 +18,11 @@ const LoginComponent = () => {
         const user=dummyUser.find(
             (user)=>user.username===username && user.password==password);
             if(user){
-                //alert("Login successful");
-                setLoginDialog(true);
-                //setIsLoggedIn(true);
+            //     
+            navigate("/welcome",{state:{username:username}});
             }
             else{
-                alert("Login data invalid");
+                alert ("Invalid credentials");
             }
         };
         const okClick=()=>{
@@ -41,8 +40,7 @@ const LoginComponent = () => {
                         <h3>username</h3>
                     <input onChange ={(e)=>setUsername(e.target.value)} type="text" placeholder="Enter the username" value={username}></input>
                     <h3>password</h3>
-                    <input onChange={(e)=>setPassword(e.target.value)} type="password" placeholder="Enter the password" value={password}></input>
-                    <br/>          
+                    <input onChange={(e)=>setPassword(e.target.value)} type="password" placeholder="Enter the password" value={password}></input>          
                     <button onClick={Loginlogic}>Login</button>
                     {loginDialog && 
                     ( <LoginDialog
